@@ -3,10 +3,13 @@ import backgroundImage from '/images/background.webp';
 
 function App() {
   return (
-    <div className="flex flex-col h-screen justify-between">
+    <div className="flex flex-col absolute inset-0 justify-between">
       <div className="flex justify-center p-4">
         <div className=" text-center space-y-10">
-          <img className="lg:max-w-2xl md:max-w-xl" src={backgroundImage} />
+          <img
+            className="lg:max-w-2xl md:max-w-xl max-w-xs"
+            src={backgroundImage}
+          />
 
           <h1 className="font-bold lg:text-6xl md:text-5xl text-4xl">
             Coming Soon
@@ -22,7 +25,7 @@ function App() {
         </div>
       </div>
       <footer className=" bg-basha text-white text-center">
-        <div className="p-4">
+        <div className="p-4 lg:text-xl text-sm">
           Copyright © {new Date().getFullYear()} Albasha - All Rights Reserved
         </div>
       </footer>
