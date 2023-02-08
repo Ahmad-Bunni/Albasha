@@ -5,17 +5,17 @@ function App() {
   return (
     <div className="flex flex-col absolute inset-0 justify-between">
       <div className="flex justify-center">
-        <div className=" text-center space-y-10">
+        <div className="space-y-10">
           <img
-            className="lg:max-w-2xl md:max-w-xl max-w-xs"
+            className="lg:max-w-2xl md:max-w-xl pl-4 pr-4"
             src={backgroundImage}
           />
 
-          <h1 className="font-bold lg:text-6xl md:text-5xl text-4xl">
+          <h1 className="text-center font-bold lg:text-6xl md:text-5xl text-4xl">
             Coming Soon
           </h1>
 
-          <div className="flex flex-col items-center lg:text-2xl md:text-xl text-xl space-y-6">
+          <div className="flex flex-col items-center lg:text-2xl md:text-xl text-md space-y-6">
             <a
               className="flex space-x-2 hover:underline"
               href="mailto:info@albashanc.com"
@@ -26,7 +26,7 @@ function App() {
                 viewBox="0 0 24 24"
                 strokeWidth={1.5}
                 stroke="currentColor"
-                className="w-6 h-6 relative top-1"
+                className="w-6 h-6 md:relative md:top-1"
               >
                 <path
                   strokeLinecap="round"
@@ -48,7 +48,7 @@ function App() {
                 viewBox="0 0 24 24"
                 strokeWidth={1.5}
                 stroke="currentColor"
-                className="w-6 h-6 relative top-1"
+                className="w-6 h-6 md:relative md:top-1"
               >
                 <path
                   strokeLinecap="round"
@@ -62,8 +62,9 @@ function App() {
                 />
               </svg>
 
-              <span className=" text-red-700">
-                501 Method Rd Raleigh NC 27607 United States
+              <span className="flex flex-col text-center text-red-700">
+                <span> 501 Method Rd Raleigh NC 27607</span>
+                <span>United States</span>
               </span>
             </a>
           </div>
