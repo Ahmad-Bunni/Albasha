@@ -7,15 +7,18 @@ export default function App() {
     <div className="flex flex-col just-ce absolute lg:mt-1 inset-0 justify-between">
       <div className="flex flex-col space-y-8">
         <img
-          className="lg:max-w-3xl md:max-w-2xl rounded-md shadow-md self-center mb-8"
+          alt="background"
+          className="md:max-w-3xl rounded-md shadow-md self-center mb-8"
+          width="100%"
+          height="100%"
           src={backgroundImage}
         />
 
-        <span className="text-center text-zinc-700 font-bold lg:text-6xl md:text-5xl text-5xl">
+        <span className="text-center text-zinc-700 font-bold md:text-6xl text-5xl">
           Now Open!
         </span>
 
-        <span className="text-center text-zinc-700 font-bold lg:text-2xl md:text-xl text-lg">
+        <span className="text-center text-zinc-700 font-bold md:text-2xl text-lg">
           Online Ordering Available Soon
         </span>
 
