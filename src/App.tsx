@@ -4,31 +4,31 @@ import backgroundImage from '/images/background.webp';
 
 export default function App() {
   return (
-    <div className="flex flex-col just-ce absolute lg:mt-1 inset-0 justify-between">
-      <div className="flex flex-col space-y-8">
-        <img
-          alt="Chicken Shawarma at Al-Basha Market & Gril"
-          className="md:max-w-3xl rounded-md shadow-md self-center mb-8"
-          width="100%"
-          height="100%"
-          src={backgroundImage}
-        />
+    <div className="relative flex flex-col justify-between h-screen">
+      <div className="flex flex-col space-y-4">
+        <div className="md:max-w-3xl self-center mb-8 aspect-w-16 aspect-h-9 overflow-hidden rounded-md shadow-md">
+          <img
+            alt="Chicken Shawarma at Al-Basha Market & Grill"
+            className="w-full h-full object-cover"
+            src={backgroundImage}
+            loading="lazy"
+          />
+        </div>
 
-        <span className="text-center text-zinc-700 font-bold md:text-6xl text-5xl">
-          Now Open!
-        </span>
-
-        <span className="text-center text-zinc-700 font-bold md:text-2xl text-lg">
-          Online Ordering Available Soon
-        </span>
+        <div className="text-center text-zinc-700">
+          <span className="font-bold block md:text-6xl text-5xl">
+            Now Open!
+          </span>
+          <span className="font-bold block md:text-2xl text-lg mt-4">
+            Online Ordering Available Soon
+          </span>
+        </div>
 
         <Socials />
       </div>
 
-      <footer className=" bg-red-700 text-white text-center">
-        <div className="p-4 lg:text-xl text-sm">
-          Copyright © {new Date().getFullYear()} Albasha - All Rights Reserved
-        </div>
+      <footer className="bg-red-700 text-white text-center p-4 lg:text-xl text-sm">
+        Copyright © {new Date().getFullYear()} Albasha - All Rights Reserved
       </footer>
     </div>
   );
