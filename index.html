@@ -4,18 +4,74 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/basha.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Al-Basha Market & Grill</title>
-    <meta
-      name="description"
-      content="Al-Basha Market & Grill for quality meats, diverse groceries, and delicious food. Your one-stop destination for a unique shopping and dining experience. Mediterranean, turkish, and arabic food. Chicken shaorma."
-    />
-    <meta
-      name="keywords"
-      content="groceries, mediterranean, shawrma, Shaorma, middle eastern, arabic, turkish, meat, shopping, food"
-    />
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <title>
+          Al-Basha Market & Grill | Mediterranean & Middle Eastern Cuisine
+        </title>
+        <meta
+          name="description"
+          content="Discover Al-Basha Market & Grill for the finest Mediterranean, Turkish, and Arabic cuisine in Raleigh, North Carolina. Enjoy top-quality meats, diverse groceries, and our famous Chicken Shawarma. A unique shopping and dining experience awaits."
+        />
+        <meta
+          name="keywords"
+          content="groceries, Mediterranean cuisine, shawarma, Middle Eastern food, Arabic groceries, Turkish delights, quality meats, gourmet shopping, food market, dining experience"
+        />
+
+        <meta
+          property="og:title"
+          content="Al-Basha Market & Grill | Mediterranean & Middle Eastern Cuisine"
+        />
+        <meta property="og:type" content="restaurant" />
+        <meta property="og:url" content="https://albashanc.com/" />
+        <meta
+          property="og:image"
+          content="https://albashanc.com/images/background.webp"
+        />
+
+        <meta
+          property="og:description"
+          content="Discover Al-Basha Market & Grill for the finest Mediterranean, Turkish, and Arabic cuisine in Raleigh, North Carolina. Enjoy our famous Chicken Shawarma and a unique shopping and dining experience."
+        />
+
+        <script type="application/ld+json">
+          {
+            "@context": "http://schema.org",
+            "@type": "Restaurant",
+            "name": "Al-Basha Market & Grill",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "501 Method Rd",
+              "addressLocality": "Raleigh",
+              "addressRegion": "NC",
+              "postalCode": "27607",
+              "addressCountry": "US"
+            },
+            "telephone": "+19193412011",
+            "url": "https://albashanc.com/",
+            "image": "https://albashanc.com/images/background.webp",
+            "review": {
+              "@type": "Review",
+              "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5",
+                "bestRating": "5"
+              },
+              "author": {
+                "@type": "Person",
+                "name": "Customer Name" <!-- Replace with an actual review author name or remove if not applicable -->
+              }
+            },
+            "servesCuisine": ["Mediterranean", "Turkish", "Arabic"]
+          }
+        </script>
+      </head>
+      <body>
+        <div id="root"></div>
+        <script type="module" src="/src/main.tsx"></script>
+      </body>
+    </html>
   </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
 </html>

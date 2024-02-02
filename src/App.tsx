@@ -7,7 +7,7 @@ export default function App() {
     <div className="flex flex-col just-ce absolute lg:mt-1 inset-0 justify-between">
       <div className="flex flex-col space-y-8">
         <img
-          alt="background"
+          alt="Chicken Shawarma at Al-Basha Market & Gril"
           className="md:max-w-3xl rounded-md shadow-md self-center mb-8"
           width="100%"
           height="100%"
