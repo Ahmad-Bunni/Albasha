@@ -6,20 +6,30 @@ export default function App() {
   return (
     <div className="relative flex flex-col justify-between min-h-screen">
       <div className="flex flex-col space-y-8">
-        <div className="self-center overflow-hidden rounded-md shadow-md max-w-full mx-auto">
+        <div className="self-center rounded-md shadow-md">
           <img
             src={backgroundImage}
             alt="Chicken Shawarma at Al-Basha Market & Grill"
-            className="w-full h-auto md:w-[720px] md:h-[480px] object-cover"
+            className="object-cover"
+            height="480px"
+            width="720px"
           />
         </div>
 
         <div className="text-center text-zinc-700 px-4">
-          <span className="font-bold block text-3xl md:text-5xl ">
-            Now Open!
-          </span>
-          <span className="font-bold block text-lg md:text-xl mt-2 md:mt-4">
+          <span className="font-bold block text-3xl">Now Open!</span>
+          <span className="font-bold block text-lg mt-2">
             Online Ordering Available Soon
+          </span>
+        </div>
+
+        <div className="flex flex-col items-center">
+          <span className="text-center text-sm font-semibold">
+            We'd love to hear from you!
+          </span>
+
+          <span className="text-center text-sm font-semibold">
+            Connect with us and share your thoughts.
           </span>
         </div>
 

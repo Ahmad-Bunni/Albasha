@@ -6,29 +6,17 @@ import Instagram from './components/instagram';
 
 const Socials = () => {
   return (
-    <div className="space-y-8">
-      <div className="flex flex-col items-center">
-        <span className="text-center text-sm font-semibold">
-          We'd love to hear from you!
-        </span>
+    <ul className="flex justify-center items-center pb-4 space-x-4">
+      <AppleMap />
 
-        <span className="text-center text-sm font-semibold">
-          Connect with us and share your thoughts.
-        </span>
-      </div>
+      <GoogleMap />
 
-      <ul className="flex justify-center items-center pb-4 space-x-4">
-        <AppleMap />
+      <Facebook />
 
-        <GoogleMap />
+      <Instagram />
 
-        <Facebook />
-
-        <Instagram />
-
-        <CallUs />
-      </ul>
-    </div>
+      <CallUs />
+    </ul>
   );
 };
 
