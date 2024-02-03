@@ -2,6 +2,7 @@ const Instagram = () => {
   return (
     <li>
       <a
+        aria-label="Instagram"
         target="_blank"
         href="https://www.instagram.com/AlBashaNC/"
         className="text-rose-700"

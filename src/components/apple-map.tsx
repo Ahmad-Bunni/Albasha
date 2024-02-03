@@ -2,6 +2,7 @@ const AppleMap = () => {
   return (
     <li>
       <a
+        aria-label="Apple Map"
         target="_blank"
         href="https://maps.apple.com/place?address=501%20Method%20Rd,%20Raleigh,%20NC%20%2027607,%20United%20States&auid=12304333054780963400&ll=35.794211,-78.693282&lsp=9902&q=Al-Basha%20Market%20%26%20Grill&t=m"
         className="text-rose-700"

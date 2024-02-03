@@ -2,6 +2,7 @@ const GoogleMap = () => {
   return (
     <li>
       <a
+        aria-label="Google Map"
         target="_blank"
         href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x89acf5f44df639b7:0x9343f56f6ea7dd47?sa=X&ved=2ahUKEwi4t8yzsP6DAxUw3QIHHS3sAx0Q4kB6BAgOEAA"
         className="text-rose-700"

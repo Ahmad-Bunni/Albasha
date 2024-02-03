@@ -2,6 +2,7 @@ const Facebook = () => {
   return (
     <li>
       <a
+        aria-label="Facebook"
         target="_blank"
         href="https://www.facebook.com/AlBashaNC/"
         className="text-blue-500"

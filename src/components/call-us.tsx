@@ -1,7 +1,7 @@
 const CallUs = () => {
   return (
     <li>
-      <a href="tel:+19193412011" className="text-rose-700">
+      <a aria-label="Phone" href="tel:+19193412011" className="text-rose-700">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           x="0px"
