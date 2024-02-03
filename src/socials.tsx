@@ -6,8 +6,8 @@ import Instagram from './components/instagram';
 
 const Socials = () => {
   return (
-    <div className="space-y-2">
-      <div className="flex flex-col items-center space-y-2">
+    <div className="space-y-8">
+      <div className="flex flex-col items-center">
         <span className="text-center text-sm font-semibold">
           We'd love to hear from you!
         </span>
@@ -17,7 +17,7 @@ const Socials = () => {
         </span>
       </div>
 
-      <ul className="flex justify-center items-center pb-4 space-x-5">
+      <ul className="flex justify-center items-center pb-4 space-x-4">
         <AppleMap />
 
         <GoogleMap />
