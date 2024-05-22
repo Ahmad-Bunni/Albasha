@@ -1,42 +1,32 @@
 import './App.css';
-import Socials from './socials';
-import backgroundImage from '/images/background.webp';
+import Gallery from './components/gallery/gallery-layout';
+import Socials from './components/socials/socials';
 export default function App() {
-  // Assuming `backgroundImage` is imported or defined elsewhere in your code.
   return (
-    <div className="relative flex flex-col justify-between min-h-screen">
-      <div className="flex flex-col space-y-8">
-        <div className="self-center rounded-md shadow-md">
-          <img
-            src={backgroundImage}
-            alt="Chicken Shawarma at Al-Basha Market & Grill"
-            className="object-cover"
-            height="480px"
-            width="720px"
-          />
+    <div className="min-h-screen flex flex-col justify-between">
+      <div className="relative flex flex-col h-full">
+        <div className="flex max-md:flex-col justify-between">
+          <div className="text-center text-zinc-700">
+            <span className="font-bold block text-lg text-gray-600 max-md:border-b max-md:p-2 h-full content-center px-2">
+              Al-Basha Market & Grill
+            </span>
+          </div>
+
+          <Socials />
         </div>
 
-        <div className="text-center text-zinc-700 px-4">
-          <span className="font-bold block text-3xl">Now Open!</span>
-          <span className="font-bold block text-lg mt-2">
-            Online Ordering Available Soon
-          </span>
-        </div>
+        <a
+          href="https://albashanc.applova.menu"
+          target="_blank"
+          className="text-white bg-red-600 p-2 hover:bg-red-500 text-center h-[40px]"
+        >
+          Our Menu
+        </a>
 
-        <div className="flex flex-col items-center">
-          <span className="text-center text-sm font-semibold">
-            We'd love to hear from you!
-          </span>
-
-          <span className="text-center text-sm font-semibold">
-            Connect with us and share your thoughts.
-          </span>
-        </div>
-
-        <Socials />
+        <Gallery />
       </div>
 
-      <footer className="bg-red-700 text-white text-center p-4 text-sm md:lg:text-xl">
+      <footer className="bg-red-700 text-white text-center p-2 text-sm md:lg:text-xl bottom-0 sticky w-full">
         Copyright © {new Date().getFullYear()} Albasha - All Rights Reserved
       </footer>
     </div>
