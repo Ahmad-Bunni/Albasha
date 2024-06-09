@@ -1,27 +1,61 @@
-import './App.css';
-import Gallery from './components/gallery/gallery-layout';
-import Socials from './components/socials/socials';
+import { useState } from "react";
+import "./App.css";
+import Gallery from "./components/gallery/gallery-layout";
+import { X, Menu } from "lucide-react";
+import StoreIcons from "./components/apps/store";
+import Socials from "./components/socials/socials";
 export default function App() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <div className="min-h-screen flex flex-col justify-between">
       <div className="relative flex flex-col h-full">
-        <div className="flex max-md:flex-col justify-between">
-          <div className="text-center text-zinc-700">
-            <span className="font-bold block text-lg text-gray-600 max-md:border-b max-md:p-2 h-full content-center px-2">
+        <div className="flex flex-col justify-between">
+          <div className="flex md:flex-col items-center border-b p-4 justify-between">
+            <img
+              src={"images/Logo.jpg"}
+              className="w-[200px] max-lg:w-[80px]"
+              alt="Logo"
+            />
+
+            <span className="font-bold block text-lg text-gray-600 p-2 h-full px-2">
               Al-Basha Market & Grill
             </span>
+
+            <div className="md:hidden flex justify-between items-center p-4">
+              <button
+                onClick={toggleMenu}
+                className="text-gray-700 focus:outline-none"
+              >
+                {isOpen ? (
+                  <X className="w-6 h-6" />
+                ) : (
+                  <Menu className="w-6 h-6" />
+                )}
+              </button>
+            </div>
           </div>
 
-          <Socials />
-        </div>
+          <div className="relative">
+            <ul
+              className={`justify-center items-center ${
+                isOpen ? "block" : "hidden"
+              } md:block`}
+            >
+              <li className="p-4">
+                <StoreIcons />
+              </li>
 
-        <a
-          href="https://albashanc.applova.menu"
-          target="_blank"
-          className="text-white bg-red-600 p-2 hover:bg-red-500 text-center h-[40px]"
-        >
-          Our Menu
-        </a>
+              <li className="p-4">
+                <Socials />
+              </li>
+            </ul>
+          </div>
+        </div>
 
         <Gallery />
       </div>
