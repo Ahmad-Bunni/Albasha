@@ -1,42 +1,27 @@
-import './App.css';
-import Socials from './socials';
-import backgroundImage from '/images/background.webp';
+import "./App.css";
+import Landing from "./components/landing";
+import OrderIcons from "./components/order";
+import Socials from "./components/socials/socials";
 export default function App() {
-  // Assuming `backgroundImage` is imported or defined elsewhere in your code.
   return (
-    <div className="relative flex flex-col justify-between min-h-screen">
-      <div className="flex flex-col space-y-8">
-        <div className="self-center rounded-md shadow-md">
-          <img
-            src={backgroundImage}
-            alt="Chicken Shawarma at Al-Basha Market & Grill"
-            className="object-cover"
-            height="480px"
-            width="720px"
-          />
-        </div>
+    <div className="min-h-screen flex flex-col justify-between">
+      <div className="flex flex-col items-center border-b p-4 justify-between bg-gray-50 gap-6">
+        <img
+          src="images/Logo.jpg"
+          className="md:w-[300px] w-[200px] rounded-md shadow-lg"
+          alt="Logo"
+          loading="lazy"
+          decoding="async"
+        />
 
-        <div className="text-center text-zinc-700 px-4">
-          <span className="font-bold block text-3xl">Now Open!</span>
-          <span className="font-bold block text-lg mt-2">
-            Online Ordering Available Soon
-          </span>
-        </div>
-
-        <div className="flex flex-col items-center">
-          <span className="text-center text-sm font-semibold">
-            We'd love to hear from you!
-          </span>
-
-          <span className="text-center text-sm font-semibold">
-            Connect with us and share your thoughts.
-          </span>
-        </div>
+        <OrderIcons />
 
         <Socials />
       </div>
 
-      <footer className="bg-red-700 text-white text-center p-4 text-sm md:lg:text-xl">
+      <Landing />
+
+      <footer className="bg-red-800 text-white text-center p-2 text-sm md:lg:text-xl bottom-0 sticky  w-full ">
         Copyright © {new Date().getFullYear()} Albasha - All Rights Reserved
       </footer>
     </div>
