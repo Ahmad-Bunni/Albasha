@@ -7,9 +7,11 @@ export default function App() {
     <div className="min-h-screen flex flex-col justify-between">
       <div className="flex flex-col items-center border-b p-4 justify-between bg-gray-50 gap-6">
         <img
-          src={"images/Logo.jpg"}
+          src="images/Logo.jpg"
           className="md:w-[300px] w-[200px] rounded-md shadow-lg"
           alt="Logo"
+          loading="lazy"
+          decoding="async"
         />
 
         <OrderIcons />

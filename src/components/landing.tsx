@@ -32,7 +32,13 @@ const Landing = () => {
 
       <div className="flex justify-center">
         {homeComponent ? (
-          <img src={"images/store.webp"} className="w-full" alt="Store" />
+          <img
+            src="images/store.webp"
+            className="w-full"
+            alt="Store"
+            loading="lazy"
+            decoding="async"
+          />
         ) : (
           <Gallery />
         )}
