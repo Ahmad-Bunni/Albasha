@@ -4,12 +4,12 @@ const OrderIcons = () => {
       <a
         href="https://albashanc.applova.menu"
         target="_blank"
-        className="text-white bg-gray-800 p-2 hover:bg-gray-600 text-center w-full rounded-md"
+        className="text-white bg-gray-700 p-2 hover:bg-gray-600 text-center w-full rounded-md"
       >
         Order Online
       </a>
 
-      <span className="font-semibold text-center text-lg">
+      <span className="font-semibold text-center text-lg text-white">
         You Can Also Order Through
       </span>
 
