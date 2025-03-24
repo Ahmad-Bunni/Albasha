@@ -14,7 +14,7 @@ const Landing = () => {
 
   return (
     <div className="flex flex-col">
-      <div className="flex justify-center shadow bg-gray-300 p-4 text-lg font-semibold">
+      <div className="flex justify-center shadow bg-gray-400 p-4 text-lg font-semibold">
         <button
           className={`w-[200px] p-2  rounded-l-md border-r ${homeComponent ? "bg-gray-800 text-white" : "bg-gray-50"}`}
           onClick={handleLeftClick}
